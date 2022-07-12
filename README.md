@@ -1,2 +1,2 @@
-# charkra-ui-signin-and-signup
-Projeto para estudar Chakra-ui
+# charkra-ui-signin-and-signup-with-atomic
+Projeto para estudar Chakra-ui implementando atomic design
