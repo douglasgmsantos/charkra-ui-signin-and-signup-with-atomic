@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 
-import SignIn from '../components/pages/sign-in'
+import SignInPage from './sign-in'
 
 const Home: NextPage = () => {
   return (
-    <SignIn />
+    <SignInPage />
   )
 }
 
