@@ -42,7 +42,7 @@ const FormField = ({
       )}
       {children}
       {error && (
-        <FormErrorMessage fontSize={'xxxs'} >{error?.message}</FormErrorMessage>
+        <FormErrorMessage  data-testid="form-error-message" fontSize={'xxxs'} >{error?.message}</FormErrorMessage>
       )}
     </FormControl>
   )
