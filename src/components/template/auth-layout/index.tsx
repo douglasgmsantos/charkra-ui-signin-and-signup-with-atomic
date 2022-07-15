@@ -11,7 +11,7 @@ type IAuthLayoutProps = {
 export default function AuthLayout({ children }: IAuthLayoutProps) {
   return (
     <Box bg={'standard.light'} minHeight="100vh">
-        <Box p="xxs"  bg={'standard.light'} height="100%">
+        <Box bg={'standard.light'} height="100%">
             {children}
         </Box>
     </Box>
