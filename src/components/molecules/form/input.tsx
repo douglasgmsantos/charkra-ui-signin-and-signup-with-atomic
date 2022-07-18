@@ -16,14 +16,12 @@ export type InputSizes = 'xs' | 'sm' | 'md' | 'lg'
 
 type Props = InputProps & {
   name: string
-  label?: FieldLabel
+  label: FieldLabel
   errors: FieldErrorsImpl;
   fieldRegister: Path<any>;
   register: UseFormRegister<any>;
   type: HTMLInputTypeAttribute
   size?: InputSizes
-  leftElementSlot?: React.ReactNode
-  rightElementSlot?: React.ReactNode
 }
 
 const FormInput = (props: Props) => {
@@ -34,7 +32,6 @@ const FormInput = (props: Props) => {
     name,
     label,
     errors,
-    rightElementSlot,
     ...inputProps
   } = props
 
