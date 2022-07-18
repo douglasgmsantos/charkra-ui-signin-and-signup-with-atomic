@@ -24,7 +24,6 @@ const FormField = ({
   error ,
   isDisabled = false,
 }: Props) => {
-
   return (
     <FormControl isInvalid={!!error} isDisabled={isDisabled}>
       {label && (
@@ -32,7 +31,7 @@ const FormField = ({
           htmlFor={name}
           fontWeight="bold"
           fontSize="xs"
-          data-testid="form-label-text"
+          data-testid={`form-label-text${isDisabled ? '-disabled' : '' }`}
           color="brand.secondary-default"
           textTransform={"uppercase"}
           {...label.props}
