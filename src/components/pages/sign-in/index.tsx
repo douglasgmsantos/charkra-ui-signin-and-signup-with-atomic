@@ -49,7 +49,7 @@ export default function SignIn() {
   }
 
   return (
-    <Box width="100%" height="100vh" display="flex" justifyContent={"center"} alignItems="center">
+    <Box width="100%" height="100vh" display="flex" justifyContent={"center"} alignItems="center" data-testid={"sign-in"}>
       <Grid width="450px" bg={'standard.white'} padding="md">
         <form onSubmit={handleSubmit(onSubmit)} data-testid={"formulario-login"}>
           <GridItem mb="xxxs">
