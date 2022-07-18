@@ -51,7 +51,7 @@ export default function SignIn() {
   return (
     <Box width="100%" height="100vh" display="flex" justifyContent={"center"} alignItems="center">
       <Grid width="450px" bg={'standard.white'} padding="md">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} data-testid={"formulario-login"}>
           <GridItem mb="xxxs">
             <FormInput 
               isDisabled={isLoading}
@@ -84,9 +84,7 @@ export default function SignIn() {
               loadingText='Carregando ...' 
               isDisabled={!isValid} 
               isLoading={isLoading}
-            >
-              Entrar
-            </Button>
+            >Entrar</Button>
             <Button 
               type={"submit"} 
               variant="default-outline"

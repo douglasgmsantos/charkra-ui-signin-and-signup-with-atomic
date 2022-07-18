@@ -9,7 +9,6 @@ import FormInput from '../input'
 import { mocked } from 'ts-jest/dist/utils/testing';
 
 jest.mock('react-hook-form')
-jest.mock('@hookform/resolvers/yup')
 
 interface IFormValue {
     user : string

@@ -8,4 +8,5 @@ module.exports = {
     moduleNameMapper: {
         "\\.(scss|css|sass)$": "identity-obj-proxy",
     },
+    resolver: '<rootDir>/resolver.js',
 };
